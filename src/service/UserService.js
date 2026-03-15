@@ -2,7 +2,7 @@ export class UserService {
     #storageKey = 'ew-academy-users';
 
     async getDefaultUsers() {
-        const response = await fetch('./data/users.json');
+        const response = await fetch('../data/users.json');
         const users = await response.json();
         this.#setStorage(users);
 

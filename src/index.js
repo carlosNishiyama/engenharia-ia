@@ -20,7 +20,7 @@ const userView = new UserView();
 const productView = new ProductView();
 const modelView = new ModelView();
 const tfVisorView = new TFVisorView();
-const mlWorker = new Worker('/src/workers/modelTrainingWorker.js', { type: 'module' });
+const mlWorker = new Worker('/src/workers/modelTrainingWorker.js');
 
 // Set up worker message handler
 const w = WorkerController.init({
